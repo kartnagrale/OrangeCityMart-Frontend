@@ -37,9 +37,9 @@ const features = [
 
 const navigation = [
   { name: 'Home', href: '#' },
-  { name: 'About us', href: '#' },
+  { name: 'About us', href: '#about-us' },
   // { name: 'See How it works', href: '#' },
-  { name: 'Contact us', href: '#' },
+  { name: 'Contact us', href: '#contact-us' },
 ]
 
 export default function LandingPage() {
@@ -157,7 +157,7 @@ export default function LandingPage() {
                 >
                   Get started
                 </a>
-                <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                <a href="#join-us" className="text-sm font-semibold leading-6 text-gray-900">
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -189,7 +189,9 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="bg-white sm:py-32">
+
+      
+      <div id="about-us" className="bg-white sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-orange-600">About Us</h2>
@@ -221,7 +223,7 @@ export default function LandingPage() {
 
 
       {/* Join Us */}
-      <div className="bg-white p-6 sm:p-8 md:p-10 lg:p-16 rounded-lg max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-10">
+      <div id="join-us" className="bg-white p-6 sm:p-8 md:p-10 lg:p-16 rounded-lg max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-10">
         {/* Left Side - Image and Heading */}
         <div className="flex flex-col items-center md:items-start md:w-1/2">
           <img
@@ -273,7 +275,7 @@ export default function LandingPage() {
       
       {/* Contact Us  */}
 
-      <section className="bg-white">
+      <section id="contact-us" className="bg-white">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
             Contact Us
