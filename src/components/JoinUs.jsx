@@ -1,8 +1,13 @@
 import React from 'react'
 import community from '../assets/community.png'
-
+import { useNavigate } from 'react-router-dom';
 
 export default function JoinUs() {
+  const navigate = useNavigate();
+  const handleAuthClick = (e) => {
+    e.preventDefault();
+    navigate('/auth');
+  };
   return (
     <div id="join-us" className="bg-white p-6 sm:p-8 md:p-10 lg:p-16 rounded-lg max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-10">
         {/* Left Side - Image and Heading */}
@@ -19,7 +24,7 @@ export default function JoinUs() {
             Explore Nagpur’s most vibrant marketplace in just 3 easy steps!
           </p>
           <button
-            href="#"
+            onClick={handleAuthClick}
             className="rounded-md bg-orange-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Sign up now

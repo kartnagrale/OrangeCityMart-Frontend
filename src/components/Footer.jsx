@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ocmimage from '../assets/ocm.png';
 
 export default function Footer() {
@@ -93,11 +93,6 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-6 text-gray-900">Information</h4>
           <ul className="space-y-4">
-            <li>
-              <button href="#about-us" className="text-gray-600 hover:text-orange-600 text-sm">
-                About Us
-              </button>
-            </li>
             <li>
               <button
                 onClick={toggleTermsModal}

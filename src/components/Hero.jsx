@@ -1,7 +1,16 @@
 import React from 'react'
 import ocmimage from '../assets/ocm.png'
+import { useNavigate} from 'react-router-dom'
 
 export default function Hero() {
+
+  const navigate = useNavigate();
+
+  const handleAuthClick = (e) => {
+    e.preventDefault();
+    navigate('/auth');
+  };
+
   return (
     <div className="relative isolate px-6 lg:px-8 bg-white sm:py-32">
         <div
@@ -27,12 +36,12 @@ export default function Hero() {
                 OrangeCityMart is Nagpur’s premier online marketplace, designed to simplify buying and selling within the community.
               </p>
               <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-6">
-                <a
-                  href="#"
+                <button 
+                  onClick={handleAuthClick}
                   className="rounded-md bg-orange-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Get started
-                </a>
+                </button>
                 <a href="#join-us" className="text-sm font-semibold leading-6 text-gray-900">
                   Learn more <span aria-hidden="true">→</span>
                 </a>
