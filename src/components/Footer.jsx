@@ -340,8 +340,8 @@ export default function Footer() {
               </p>
               <ul className="list-disc list-inside mb-6">
                 <li><strong>Email:</strong> kartikknagrale@gmail.com</li>
-                <li><strong>Phone:</strong> [Insert Phone Number]</li>
-                <li><strong>Address:</strong> [Insert Office Address]</li>
+                <li><strong>Phone:</strong> +91 8920030000</li>
+                <li><strong>Address:</strong> 123, XYZ Street, Nagpur, Maharashtra</li>
               </ul>
 
               <p className="text-sm text-gray-600">

@@ -11,7 +11,6 @@ export default function LandingPage() {
 
   return (
     <div className="bg-white">
-
       <Header /> 
       <Hero />
       <AboutUs />
@@ -20,7 +19,6 @@ export default function LandingPage() {
       <ContactUs />
       <hr className="border-t border-gray-300 my-8" />
       <Footer />
-
     </div>
   )
 }

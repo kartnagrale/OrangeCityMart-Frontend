@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import shoppingcart from '../assets/shoppingcart.png';
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 const SignupPage = () => {
